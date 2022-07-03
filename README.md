@@ -1,2 +1,2 @@
 # Jupyterlab_dashboard
-A interactive dashboard made with jupyter 
+An interactive dashboard made with jupyter lab and python
