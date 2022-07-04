@@ -1,0 +1,28 @@
+name: penguins
+description: Palmer Penguin Cross-Filtering
+channels:
+- pyviz
+packages: &id001
+- python=3.7
+- scipy
+- spatialpandas=0.3.6
+- bokeh=2.2.2
+- notebook=5.7.8
+- ipykernel=5.1.0
+- pyviz_comms=2.0.0
+- holoviews=1.14.1
+- panel=0.10.2
+- hvplot=0.6.0
+dependencies: *id001
+commands:
+  dashboard:
+    unix: panel serve penguin_crossfilter.ipynb
+    supports_http_options: true
+  notebook:
+    notebook: penguin_crossfilter.ipynb
+env_specs:
+  default: {}
+platforms:
+- linux-64
+- osx-64
+- win-64
